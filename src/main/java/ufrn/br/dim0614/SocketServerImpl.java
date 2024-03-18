@@ -61,11 +61,6 @@ public class SocketServerImpl implements ChatBotServerInterface {
                     String response = chatSession.multisentenceRespond(message);
                     System.out.println("Send: " + response);
                     output.println(response);
-                    for (PrintWriter writer : CLIENT_WRITERS) {
-                        if (writer != output) {
-                            writer.println("From another client: " + message);
-                        }
-                    }
                 }
             } catch (IOException e) {
                 System.out.println("Exception in ClientHandler: " + e.getMessage());
