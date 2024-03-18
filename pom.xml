@@ -13,5 +13,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
+    <dependencies>
+        <dependency>
+            <artifactId>com.google</artifactId>
+            <groupId>Ab</groupId>
+            <version>0.0.4.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/program-ab-0.0.4.3/lib/Ab.jar</systemPath>
+        </dependency>
+    </dependencies>
 </project>
