@@ -55,7 +55,7 @@ public class ChatBotClient {
             while (true) {
                 String userInput = scanner.nextLine();
                 if ("exit".equalsIgnoreCase(userInput)) {
-                    break;
+                    Runtime.getRuntime().exit(0);
                 }
                 out.println(userInput);
             }
@@ -75,7 +75,7 @@ public class ChatBotClient {
             while (true) {
                 String userInput = scanner.nextLine();
                 if ("exit".equalsIgnoreCase(userInput)) {
-                    break;
+                    Runtime.getRuntime().exit(0);
                 }
                 String response = service.sendMessage(userInput);
                 System.out.println(response);
